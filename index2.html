@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Mio Viaggio a Malaga</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Impostazioni generali */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(to bottom, #fefefe, #f0f8ff);
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(to right, #ff5733, #ff8d1a);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+        }
+
+        header h1 {
+            font-size: 28px;
+            color: #fff;
+            margin: 0;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #ffeeba;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 300px;
+            background: url('malaga-hero.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero h2 {
+            font-size: 36px;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Sezioni */
+        section {
+            padding: 100px 20px 40px;
+            margin: 0 auto;
+            max-width: 900px;
+        }
+
+        section h2 {
+            font-size: 26px;
+            color: #ff5733;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ff8d1a;
+            display: inline-block;
+        }
+
+        section p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 900px;
+            height: 480px;
+            border: none;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Pulsante di ritorno in alto */
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #ff5733;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 50%;
+            font-size: 18px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s ease;
+        }
+
+        .back-to-top:hover {
+            background: #ff8d1a;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Il Mio Viaggio a Malaga</h1>
+        <nav>
+            <ul>
+                <li><a href="#itinerario">Itinerario</a></li>
+                <li><a href="#galleria">Galleria</a></li>
+                <li><a href="#presentazione">Presentazione</a></li>
+                <li><a href="#cibo">Cibo Tipico</a></li>
+                <li><a href="#eventi">Eventi</a></li>
+                <li><a href="#curiosita">Curiosità</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Benvenuti a Malaga: una città da scoprire!</h2>
+    </div>
+
+    <section id="itinerario">
+        <h2>Itinerario</h2>
+        <p>Scopri i luoghi che ho visitato durante il mio viaggio a Malaga. Una città ricca di cultura, storia e bellezza naturale.</p>
+        <iframe src="https://www.google.com/maps/d/embed?mid=14YPpFzm9MRbyUCfvBC4n6-6BcyO2s4s&ehbc=2E312F"></iframe>
+    </section>
+
+    <section id="galleria">
+        <h2>Galleria</h2>
+        <p>Queste sono alcune delle foto più belle che ho scattato durante il mio viaggio. Ogni immagine rappresenta un ricordo unico.</p>
+        <div class="gallery">
+            <img src="Alcazaba.jpg" alt="La bellissima Alcazaba">
+            <img src="Centro Històrico Màlaga.jpg.jpg" alt="Il centro storico di Malaga">
+            <img src="Setenil de Las Bodegas.jpg.jpg" alt="Setenil de Las Bodegas, un luogo magico">
+        </div>
+    </section>
+
+    <section id="presentazione">
+        <h2>Presentazione</h2>
+        <p>Questa presentazione racconta i momenti salienti del mio viaggio a Malaga, con immagini e dettagli dei luoghi visitati.</p>
+        <iframe src="Trip to malaga.pdf"></iframe>
+    </section>
+
+    <section id="cibo">
+        <h2>Cibo Tipico</h2>
+        <p>Malaga è famosa per la sua cucina deliziosa, che combina sapori mediterranei con influenze locali.</p>
+        <div class="gallery">
+            <img src="locas-estan-presentes-todas-pastelerias-malaguenas_98.jpg" alt="Pescaíto Frito - Pesce fritto tipico">
+            <img src="Cosa-Mangiare-a-Malaga-Gazpachuelo.jpg" alt="Gazpachuelo - Zuppa tradizionale">
+            <img src="chiringuito-especialidad.jpg" alt="Tarta Malagueña - Dolce locale">
+        </div>
+    </section>
+
+    <section id="eventi">
+        <h2>Eventi e Feste</h2>
+        <p>Malaga ospita eventi spettacolari durante tutto l'anno, come la famosa Feria di Malaga e le celebrazioni della Settimana Santa.</p>
+        <img src="Feria-de-Malaga-Malaga-Fair-4.jpg" alt="Feria di Malaga" style="width: 100%; border-radius: 8px;">
+    </section>
+
+    <section id="curiosita">
+        <h2>Curiosità su Malaga</h2>
+        <ul>
+            <li>Malaga è una delle città più antiche del mondo, fondata dai Fenici nel 770 a.C.</li>
+            <li>È la città natale di Pablo Picasso.</li>
+            <li>La spiaggia più lunga di Malaga è Playa de la Malagueta, ideale per rilassarsi.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Il Mio Viaggio a Malaga</p>
+    </footer>
+
+    <button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑</button>
+</body>
+</html>
